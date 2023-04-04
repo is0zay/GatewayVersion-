@@ -1,0 +1,322 @@
+/* use sizing values such as rem % and vw/vh to make pages responsive */
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+/* utiize rgba color coding for opacity customization */
+.header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    padding-top: 0;
+    background-image:  linear-gradient(rgba(254, 201, 8, 0.677), rgba(0, 0, 0, 0.005) );
+    text-align: center;
+    z-index: 5;
+    font-weight: bold;
+    
+    
+}
+
+nav {
+   display: flex; 
+}
+
+.header-logo {
+    display: inline-block;
+    position: relative;
+    justify-content: left;
+    padding: 0;
+    margin: 0px 0px 0px 10px;
+}
+
+.header-logo img {
+    position: relative;
+    display: block;
+    height: 6rem;
+    width: 6rem;
+    padding: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.415);
+}
+
+.nav-ul {
+    padding-top: 25px;
+    list-style: none;
+    display: flex;
+    
+    text-align: center;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 1rem;
+    text-align: center;
+    
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 1.175rem;
+    color: #fff;
+}
+
+
+
+a:hover {
+    color: rgba(254, 201, 8, 0.677);
+    box-shadow:  3px 6px rgba(0, 0, 0, 0.05);
+    
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    z-index: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 4rem;
+    
+}
+
+/* Hompepage Specific CSS Starts */
+/* apply overlay over hero image to make text legible */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.5)), url("/images/herosandwitch.jpeg");
+
+    height: 110vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 4rem;
+}
+
+.hero-text {
+    position: relative;
+    top: 25%;
+    line-height: 1.5;
+}
+
+.hero-h1 {
+    font-size: 5rem;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 4px rgb(255, 255, 255);
+}
+
+.hero-h1 em {
+    -webkit-text-fill-color: rgb(254, 201, 8);
+    -webkit-text-stroke: 1px rgba(30, 164, 32, 0.677);
+}
+
+.hero-paragraph {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-button {
+    display: inline-block;
+    position: relative;
+    padding: .75rem;
+    border: 1px solid #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.829);
+    border-radius: 5px;
+    background-color: rgba(30, 164, 32, 0.677);
+    
+}
+
+/* Homepage Specific CSS Ends */
+
+/* Menu Specific CSS Starts */
+
+.menu-main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 4rem;
+    background-color: rgba(0, 0, 0, 0.027);
+    
+}
+.menu-heading {
+    color: rgb(9, 79, 5);
+    position: relative;
+    display: inline-block;
+    margin-top: 5rem;
+}
+.menu-paragraph {
+    color: rgb(9, 79, 5);
+    position: relative;
+}
+
+.menu-section {
+    margin-top: 5rem;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+    display: grid;
+    overflow: scroll;
+  /* used to make evenly sectioned cards sized at 15rem */
+    grid-template-columns: repeat(auto-fit, 15rem);
+    gap: .25rem;
+    
+    
+}
+
+.sandwich-card {
+    line-height: 1;
+    box-shadow: 1px 3px 6px 0px rgba(0, 0, 0, 0.05);
+    height: 20rem;
+    
+}
+
+.sandwich-card:hover {
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.403);
+}
+
+.sandwich-header {
+    font-size: 1rem;
+    color: rgb(7, 83, 3);
+}
+
+.sandwich-paragraph {
+    font-size: 1rem;
+    color: #000;
+}
+
+.sandwich-img {
+    height: 13rem;
+}
+
+/* Menu Specific CSS Ends */
+
+/* Contact Specific CSS Begins */
+
+.contact-main {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.027);
+    
+    
+}
+
+.contact-header {
+    position: relative;
+    color: rgb(7, 83, 3);
+    margin-top: 7rem;
+    display: inline-block;
+}
+
+.contact-container {
+    width: 100%;
+}
+
+.form-container {
+    width: 80%;
+    margin: auto;
+}
+
+label {
+    color: rgb(7, 83, 3);
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+input {
+    width: 100%;
+    height: 3rem;
+    color: #000;
+}
+
+input:focus {
+    background-color: rgb(253, 239, 189);
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    color: #000;
+}
+
+textarea:focus {
+    background-color: rgb(253, 239, 189);
+}
+
+.form-button {
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    color: #000;
+    background-color: rgb(253, 239, 189);
+    border-radius: .25rem;
+    
+}
+
+.form-button:hover {
+    color: #fff;
+    background-color: rgb(7, 83, 3);
+    cursor: pointer;
+}
+/* Contact Specific CSS Ends */
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.005), rgba(30, 164, 32, 0.677));
+    height: 9%;
+}
+
+.footer-list {
+    list-style: none;
+    overflow: hidden;
+    align-items: center;
+    align-self: center;
+    margin: auto;
+    text-align: center;
+}
+
+
+.footer-item {
+    display: inline-block;
+    padding: .75em;
+}
+
+.footer-item 
+a {
+    color: rgba(30, 164, 32, 0.677);
+    
+}
+
+@media (max-width: 385px) {
+
+
+    .header-logo img {
+        height: 4rem;
+        width: 4rem;
+    }
+    
+    a {
+        font-size: .85rem;
+    }
+}
